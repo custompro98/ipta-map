@@ -1,13 +1,28 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import ProgramList from '../components/ProgramList/ProgramList';
 
-const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
+const IndexPage = ({ data }) => {
+  const programs = data.allPtProgramsJson.edges.map(edge => edge.node);
 
-export default IndexPage
+  return (
+    <main>
+      <section>
+        <ProgramList programs={programs} />
+      </section>
+    </main>
+  );
+};
+
+export default IndexPage;
+
+export const query = graphql `
+  query IndexQuery {
+    allPtProgramsJson(sort: { fields: [region, name] }) {
+      edges {
+        node {
+          ...ProgramDetails
+        }
+      }
+    }
+  }
+`;

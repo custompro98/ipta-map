@@ -1,0 +1,232 @@
+[
+  {
+    "name": "Heartland Community College",
+    "address": {
+      "string": "1500 W Raab Road, Normal, IL 61761",
+      "lat": 40.534416,
+      "lng": -89.012108
+    },
+    "programType": "PTA",
+    "region": "Central"
+  },
+  {
+    "name": "Lake Land College",
+    "address": {
+      "street": "1204 Network Centre Dr, Effingham, IL 62401",
+      "lat": 39.143353,
+      "lng": -88.527336
+    },
+    "programType": "PTA",
+    "region": "Central"
+  },
+  {
+    "name": "Governors State University",
+    "address": {
+      "street": "1 University Pkwy, University Park, IL 60484",
+      "lat": 41.448340,
+      "lng": -87.716144
+    },
+    "programType": "PT",
+    "region": "East Central"
+  },
+  {
+    "name": "Midwestern University",
+    "address": {
+      "street": "555 31st St, Downers Grove, IL 60515",
+      "lat": 41.830369,
+      "lng": -87.999812
+    },
+    "programType": "PT",
+    "region": "East Central"
+  },
+  {
+    "name": "College of DuPage",
+    "address": {
+      "street": "425 Fawell Blvd, Glen Ellyn, IL 60137",
+      "lat": 41.841434,
+      "lng": -88.073090
+    },
+    "programType": "PTA",
+    "region": "East Central"
+  },
+  {
+    "name": "Fox College",
+    "address": {
+      "street": "18020 S Oak Park Ave, Tinley Park, IL 60477",
+      "lat": 41.575041,
+      "lng": -87.784343
+    },
+    "programType": "PTA",
+    "region": "East Central"
+  },
+  {
+    "name": "Kankakee Community College",
+    "address": {
+      "street": "100 College Drive, Kankakee IL 60901",
+      "lat": 41.098508,
+      "lng": -87.850483
+    },
+    "programType": "PTA",
+    "region": "East Central"
+  },
+  {
+    "name": "Northwestern University",
+    "address": {
+      "street": "645 N Michigan Ave Ste 1100, Chicago, IL 60611",
+      "lat": 41.893895,
+      "lng": -87.623633
+    },
+    "programType": "PT",
+    "region": "Eastern"
+  },
+  {
+    "name": "University of Illinois - Chicago",
+    "address": {
+      "street": "1919 W Taylor St, Chicago, IL, 60612",
+      "lat": 41.868391,
+      "lng": -87.674795
+    },
+    "programType": "PT",
+    "region": "Eastern"
+  },
+  {
+    "name": "Malcolm X College",
+    "address": {
+      "street": "1900 W Jackson Blvd, Chicago, IL, 60612",
+      "lat": 41.877807,
+      "lng": -87.674525
+    },
+    "programType": "PTA",
+    "region": "Eastern"
+  },
+  {
+    "name": "Morton College",
+    "address": {
+      "street": "3801 S Central Ave, Cicero, IL 60804",
+      "lat": 41.824240,
+      "lng": -87.762276
+    },
+    "programType": "PTA",
+    "region": "Eastern"
+  },
+  {
+    "name": "Oakton Community College",
+    "address": {
+      "street": "1600 E Golf Rd, Des Plaines, IL 60016",
+      "lat": 42.063387,
+      "lng": -87.880225
+    },
+    "programType": "PTA",
+    "region": "Eastern"
+  },
+  {
+    "name": "Northern Illinois University",
+    "address": {
+      "street": "209 Wirtz Hall, DeKalb, IL 60115",
+      "lat": 41.935719,
+      "lng": -88.763153
+    },
+    "programType": "PT",
+    "region": "North Central"
+  },
+  {
+    "name": "Rosland Franklin University",
+    "address": {
+      "street": "3333 Green Bay Rd, North Chicago, IL 60064",
+      "lat": 42.299960,
+      "lng": -87.859426
+    },
+    "programType": "PT",
+    "region": "Northern"
+  },
+  {
+    "name": "Elgin Commnity College",
+    "address": {
+      "street": "1700 Spartan Dr, Elgin, IL 60123",
+      "lat": 42.017735,
+      "lng": -88.323004
+    },
+    "programType": "PTA",
+    "region": "Northern"
+  },
+  {
+    "name": "Kaskaskia College",
+    "address": {
+      "street": "27210 College Rd, Centralia, IL 62801",
+      "lat": 38.563517,
+      "lng": -89.193183
+    },
+    "programType": "PTA",
+    "region": "Southern"
+  },
+  {
+    "name": "Southern Illinois University",
+    "address": {
+      "street": "1365 Douglas Dr, Carbondale, IL 62901",
+      "lat": 37.708963,
+      "lng": -89.220746
+    },
+    "programType": "PTA",
+    "region": "Southern"
+  },
+  {
+    "name": "Southwestern Illinois College",
+    "address": {
+      "street": "2500 Carlyle Ave, Belleville, IL 62221",
+      "lat": 38.512983,
+      "lng": -89.926422
+    },
+    "programType": "PTA",
+    "region": "Southern"
+  },
+  {
+    "name": "Bradley University",
+    "address": {
+      "street": "1501 W Bradley Ave, Peoria, 61625",
+      "lat": 40.696383,
+      "lng": -89.615972
+    },
+    "programType": "PT",
+    "region": "Western"
+  },
+  {
+    "name": "Black Hawk College",
+    "address": {
+      "street": "6600 34th Ave, Moline, IL 61265",
+      "lat": 41.477477,
+      "lng": -90.448230
+    },
+    "programType": "PTA",
+    "region": "Western"
+  },
+  {
+    "name": "Illinois Central College",
+    "address": {
+      "street": "5407 N University St, Peoria, IL 61614",
+      "lat": 40.752511,
+      "lng": -89.617801
+    },
+    "programType": "PTA",
+    "region": "Western"
+  },
+  {
+    "name": "McHenry County College",
+    "address": {
+      "street": "8900 US Highway 14, Crystal Lake, IL 60012",
+      "lat": 42.259164,
+      "lng": -88.369160
+    },
+    "programType": "PTA",
+    "region": "Northern"
+  },
+  {
+    "name": "William Rainey Harper College",
+    "address": {
+      "street": "1200 W Algonquin, Palatine, IL 60067",
+      "lat": 42.081453,
+      "lng": -88.072626
+    },
+    "programType": "PTA",
+    "region": "Northern"
+  }
+]
