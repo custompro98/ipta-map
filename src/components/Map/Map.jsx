@@ -31,7 +31,7 @@ class Map extends Component {
     return (
       <ReactMapGL
         {...this.state.viewport}
-        mapboxApiAccessToken="pk.eyJ1IjoiY3VzdG9tcHJvOTgiLCJhIjoiY2pqbm0xMDZ0N2RseDNwcDF0anBwdjczcCJ9.Xt5-HsttWY_AgpPfwObbgw"
+        mapboxApiAccessToken={process.env.GATSBY_MAPBOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => this.setState({viewport})}
       >
         {this.markers()}
