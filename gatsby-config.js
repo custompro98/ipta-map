@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'IPTA Programs Map'
+    title: 'Illinois PT and PTA Programs'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
