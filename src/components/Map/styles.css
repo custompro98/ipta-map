@@ -1,0 +1,21 @@
+.Map {
+
+}
+
+.Map__Marker {
+
+}
+
+.Map__Marker_Div {
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.Map__Marker_Div_PT {
+  background-color: #72D1DC;
+}
+
+.Map__Marker_Div_PTA {
+  background-color: #F8A031
+}

@@ -10,6 +10,9 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[]}
+      link={[
+        { rel: "stylesheet", href: "https://api.tiles.mapbox.com/mapbox-gl-js/v0.42.0/mapbox-gl.css" }
+      ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
     <div
