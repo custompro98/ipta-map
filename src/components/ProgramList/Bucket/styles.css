@@ -1,0 +1,30 @@
+.Bucket {
+}
+
+.Bucket__Title {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.Bucket__List {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Bucket__ListItem {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+  padding: 2px;
+}
+
+.Bucket__ListItem_PT {
+  color: #72D1DC;
+}
+
+.Bucket__ListItem_PTA {
+  color: #F8A031;
+}
