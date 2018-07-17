@@ -208,25 +208,5 @@
     },
     "programType": "PTA",
     "region": "Western"
-  },
-  {
-    "name": "McHenry County College",
-    "address": {
-      "street": "8900 US Highway 14, Crystal Lake, IL 60012",
-      "lat": 42.259164,
-      "lng": -88.369160
-    },
-    "programType": "PTA",
-    "region": "Northern"
-  },
-  {
-    "name": "William Rainey Harper College",
-    "address": {
-      "street": "1200 W Algonquin, Palatine, IL 60067",
-      "lat": 42.081453,
-      "lng": -88.072626
-    },
-    "programType": "PTA",
-    "region": "Northern"
   }
 ]
