@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Bucket from './Bucket/Bucket';
 import './styles.css';
 
-const ProgramList = ({ programs }) => {
+const ProgramList = ({ programs, onListItemClick }) => {
   const programsByRegion = programs.reduce((accum, program) => {
     if (accum[program.region] && accum[program.region].length > 0) {
       accum[program.region].push(program);
@@ -18,7 +18,7 @@ const ProgramList = ({ programs }) => {
     <ul className="ProgramList">
       {Object.keys(programsByRegion).map(region => (
         <li key={region} className="ProgramList__Program">
-          <Bucket title={region} subItems={programsByRegion[region]} />
+          <Bucket title={region} subItems={programsByRegion[region]} handleListItemClick={onListItemClick} />
         </li>
       ))}
     </ul>
@@ -39,7 +39,8 @@ ProgramList.propTypes = {
       'Southern',
       'Western'
     ])
-  }))
+  })),
+  onListItemClick: PropTypes.func
 };
 
 export default ProgramList;
@@ -55,4 +56,4 @@ export const ProgramDetailsFragment = graphql `
     region
     programType
   }
-`
+`;

@@ -17,5 +17,9 @@
 }
 
 .Map__Marker_Div_PTA {
-  background-color: #F8A031
+  background-color: #F8A031;
+}
+
+.Map__Marker_Div_Active {
+  background-color: #346DF1;
 }

@@ -2,12 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './styles.css';
 
-const Bucket = ({ title, subItems }) => (
+const Bucket = ({ title, subItems, handleListItemClick }) => (
   <div className="Bucket">
     <h3 className="Bucket__Title">{title}</h3>
     <ul className="Bucket__List">
       {subItems.map(subItem => (
-        <li key={subItem.name} className={`Bucket__ListItem Bucket__ListItem_${subItem.programType}`}>
+        <li
+          key={subItem.name}
+          className={`Bucket__ListItem Bucket__ListItem_${subItem.programType}`}
+          onClick={(e) => handleListItemClick(e.target.innerText)}
+        >
           {subItem.name}
         </li>
       ))}
@@ -20,7 +24,8 @@ Bucket.propTypes = {
   subItems: PropTypes.arrayOf(PropTypes.shape({
     name: PropTypes.string,
     programType: PropTypes.oneOf(['PT', 'PTA'])
-  }))
+  })),
+  handleListItemClick: PropTypes.func
 };
 
 export default Bucket;

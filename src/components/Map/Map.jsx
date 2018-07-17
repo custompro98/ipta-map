@@ -15,6 +15,18 @@ class Map extends Component {
     }
   };
 
+  classNameForMarker = (marker) => {
+    const classes = ['Map__Marker_Div'];
+
+    if (marker.active) {
+      classes.push('Map__Marker_Div_Active')
+    } else {
+      classes.push(`Map__Marker_Div_${marker.programType}`);
+    }
+
+    return classes.join(' ');
+  };
+
   markers = () => (
     this.props.markers.map(marker => (
       <Marker
@@ -23,7 +35,8 @@ class Map extends Component {
         className="Map__Marker"
         key={`${marker.lat}_${marker.lng}`}
       >
-        <div className={`Map__Marker_Div Map__Marker_Div_${marker.programType}`} />
+        <div className={this.classNameForMarker(marker)} />
+        { marker.active && <span>{marker.programType}</span> }
       </Marker>
     ))
   );
@@ -39,7 +52,7 @@ class Map extends Component {
       </ReactMapGL>
     );
   };
-}
+};
 
 Map.propTypes = {
   markers: PropTypes.arrayOf(PropTypes.shape({
@@ -47,6 +60,6 @@ Map.propTypes = {
     lng: PropTypes.number,
     programType: PropTypes.oneOf(['PT', 'PTA'])
   }))
-}
+};
 
 export default Map;
