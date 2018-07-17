@@ -9,6 +9,7 @@
     "gatsby-plugin-react-helmet": "^2.0.10",
     "gatsby-source-filesystem": "^1.5.39",
     "gatsby-transformer-json": "^1.0.20",
+    "prop-types": "^15.6.2",
     "react-helmet": "^5.2.0",
     "react-map-gl": "^3.3.0"
   },

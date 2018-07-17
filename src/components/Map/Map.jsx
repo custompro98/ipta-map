@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ReactMapGL, { Marker } from 'react-map-gl';
 
 import './styles.css';
@@ -38,6 +39,14 @@ class Map extends Component {
       </ReactMapGL>
     );
   };
+}
+
+Map.propTypes = {
+  markers: PropTypes.arrayOf(PropTypes.shape({
+    lat: PropTypes.number,
+    lng: PropTypes.number,
+    programType: PropTypes.oneOf(['PT', 'PTA'])
+  }))
 }
 
 export default Map;

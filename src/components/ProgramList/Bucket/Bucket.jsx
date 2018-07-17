@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 const Bucket = ({ title, subItems }) => (
@@ -13,5 +14,13 @@ const Bucket = ({ title, subItems }) => (
     </ul>
   </div>
 );
+
+Bucket.propTypes = {
+  title: PropTypes.string,
+  subItems: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    programType: PropTypes.oneOf(['PT', 'PTA'])
+  }))
+};
 
 export default Bucket;

@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import Bucket from './Bucket/Bucket';
 import './styles.css';
 
@@ -22,6 +23,23 @@ const ProgramList = ({ programs }) => {
       ))}
     </ul>
   );
+};
+
+ProgramList.propTypes = {
+  programs: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    address: PropTypes.shape(null),
+    programType: PropTypes.oneOf(['PT', 'PTA']),
+    region: PropTypes.oneOf([
+      'Central',
+      'East Central',
+      'Eastern',
+      'North Central',
+      'Northern',
+      'Southern',
+      'Western'
+    ])
+  }))
 };
 
 export default ProgramList;
