@@ -11,7 +11,12 @@ const InfoBox = ({ program }) => {
         <span className="InfoBox__Program_Type">{program.programType}</span>
       </div>
       <div className="InfoBox__Body">
-        <span className="InfoBox__Address">{program.address.street}</span>
+        <a
+          className="InfoBox__Address"
+          href={`https://www.google.com/maps/place/${program.address.street.replace(' ', '+')}`}
+        >
+          {program.address.street}
+        </a>
       </div>
     </div>
   );
