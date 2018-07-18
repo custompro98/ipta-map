@@ -12,7 +12,8 @@ class Map extends Component {
       latitude: 39.7817,
       longitude: -89.6501,
       zoom: 5
-    }
+    },
+    mapStyle: "light"
   };
 
   classNameForMarker = (marker) => {
@@ -47,6 +48,7 @@ class Map extends Component {
         {...this.state.viewport}
         mapboxApiAccessToken={process.env.GATSBY_MAPBOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => this.setState({ viewport })}
+        mapStyle={`mapbox://styles/mapbox/${this.state.mapStyle}-v9`}
       >
         {this.markers()}
       </ReactMapGL>
