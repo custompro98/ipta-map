@@ -1,26 +1,10 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# IPTA Map
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+An interactive map to display all of the PT & PTA programs in the state of Illinois
+Built for the IPTA SSIG
 
-## Install
-
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
-
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Local Development
+- Fork or clone this repo
+- `npm install` to get all dependencies
+- `npm run develop` to start local server
+- `npm run build` to create a production-ready build
