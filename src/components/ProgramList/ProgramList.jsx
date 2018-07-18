@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Bucket from './Bucket/Bucket';
 import './styles.css';
@@ -18,7 +18,11 @@ const ProgramList = ({ programs, onListItemClick }) => {
     <ul className="ProgramList">
       {Object.keys(programsByRegion).map(region => (
         <li key={region} className="ProgramList__Program">
-          <Bucket title={region} subItems={programsByRegion[region]} handleListItemClick={onListItemClick} />
+          <Bucket
+            title={region}
+            subItems={programsByRegion[region]}
+            handleListItemClick={onListItemClick}
+          />
         </li>
       ))}
     </ul>
@@ -49,7 +53,7 @@ export const ProgramDetailsFragment = graphql `
   fragment ProgramDetails on PtProgramsJson {
     name
     address {
-      string
+      street
       lat
       lng
     }

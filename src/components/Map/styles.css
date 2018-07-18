@@ -3,7 +3,11 @@
 }
 
 .Map__Marker {
+  z-index: 1;
+}
 
+.Map__Marker_Active {
+  z-index: 2;
 }
 
 .Map__Marker_Div {

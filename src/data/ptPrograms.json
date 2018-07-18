@@ -2,7 +2,7 @@
   {
     "name": "Heartland Community College",
     "address": {
-      "string": "1500 W Raab Road, Normal, IL 61761",
+      "street": "1500 W Raab Road, Normal, IL 61761",
       "lat": 40.534416,
       "lng": -89.012108
     },

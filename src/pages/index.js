@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
 import ProgramList from '../components/ProgramList/ProgramList';
 import Map from '../components/Map/Map';
+import InfoBox from '../components/InfoBox/InfoBox';
+
 import './styles.css';
 
 class IndexPage extends Component {
   state = {
-    activeMarker: undefined,
+    activeProgram: {},
   };
 
-  handleListItemClick = highlightedMarker => {
-    this.setState({ activeMarker: highlightedMarker });
+  handleListItemClick = highlightedProgram => {
+    this.setState({ activeProgram: highlightedProgram });
   }
 
-  render() {
-    const programs = this.props.data.allPtProgramsJson.edges.map(
+  programs = () => (
+    this.props.data.allPtProgramsJson.edges.map(
       edge => edge.node
-    );
+    )
+  );
+
+  render() {
+    const programs = this.programs();
     const markers = programs.map(program => ({
       ...program.address,
       programType: program.programType,
-      active: program.name === this.state.activeMarker,
+      active: program.name === this.state.activeProgram.name
     }));
 
     return (
@@ -29,7 +35,9 @@ class IndexPage extends Component {
             programs={programs}
             onListItemClick={this.handleListItemClick}
           />
-          <Map markers={markers} />
+          <Map markers={markers}>
+            <InfoBox program={this.state.activeProgram} />
+          </Map>
         </section>
       </main>
     );

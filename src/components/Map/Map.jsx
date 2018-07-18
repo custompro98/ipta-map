@@ -32,11 +32,11 @@ class Map extends Component {
       <Marker
         latitude={marker.lat}
         longitude={marker.lng}
-        className="Map__Marker"
+        className={marker.active ? "Map__Marker_Active" : "Map__Marker"}
         key={`${marker.lat}_${marker.lng}`}
       >
         <div className={this.classNameForMarker(marker)} />
-        { marker.active && <span>{marker.programType}</span> }
+        { marker.active && this.props.children }
       </Marker>
     ))
   );
@@ -46,7 +46,7 @@ class Map extends Component {
       <ReactMapGL
         {...this.state.viewport}
         mapboxApiAccessToken={process.env.GATSBY_MAPBOX_ACCESS_TOKEN}
-        onViewportChange={(viewport) => this.setState({viewport})}
+        onViewportChange={(viewport) => this.setState({ viewport })}
       >
         {this.markers()}
       </ReactMapGL>
@@ -54,12 +54,17 @@ class Map extends Component {
   };
 };
 
+Map.defaultProps = {
+  children: null
+};
+
 Map.propTypes = {
   markers: PropTypes.arrayOf(PropTypes.shape({
     lat: PropTypes.number,
     lng: PropTypes.number,
     programType: PropTypes.oneOf(['PT', 'PTA'])
-  }))
+  })),
+  children: PropTypes.element
 };
 
 export default Map;

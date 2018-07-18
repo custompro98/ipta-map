@@ -1,0 +1,31 @@
+.InfoBox {
+  width: 275px;
+  background-color: white;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.InfoBox__Header {
+  height: 20px;
+  line-height: 18px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px solid black;
+}
+
+.InfoBox__Title {
+  font-size: 16px;
+}
+
+.InfoBox__Program_Type {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.InfoBox__Body {
+  height: 30px;
+}
+
+.InfoBox__Address {
+  font-size: 14px;
+}

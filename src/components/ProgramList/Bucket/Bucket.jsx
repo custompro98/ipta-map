@@ -10,7 +10,7 @@ const Bucket = ({ title, subItems, handleListItemClick }) => (
         <li
           key={subItem.name}
           className={`Bucket__ListItem Bucket__ListItem_${subItem.programType}`}
-          onClick={(e) => handleListItemClick(e.target.innerText)}
+          onClick={() => handleListItemClick(subItem)}
         >
           {subItem.name}
         </li>
